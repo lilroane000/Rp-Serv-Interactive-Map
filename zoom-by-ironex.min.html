@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css" type="text/css"> 
+<title>JS Only Image Zoom Demo</title> 
+</head>
+<body>
+  <div id="container">
+    <div class="zoom">
+      <div class="media">
+        <!-- Map IMG -->
+
+
+        <div class="map_scale">
+
+          <img src="src/map.png" class="map" alt="test1">
+
+          <img src="src/metro.png" class="metro" alt="test1">
+        
+          <img src="src/transilien.png" class="transilien" alt="test1">
+          
+          <img src="src/frontiere_villes.png" class="fVilles" alt="test1">
+          
+          <!-- <img src="src/frontiere_département.png" class="fDépartement" alt="test1"> -->
+          
+          <img src="src/nom_de_villes.png" class="ndv" alt="test1">
+
+        </div>
+
+
+      </div>
+    </div>  
+  </div>
+
+  <div class="right_bar">
+    <input type="checkbox" name="Metro" id="metro_checkbox" onchange="doalert(this, document.querySelector('.metro'))">
+    <label for="Metro">Metro</label>
+    <input type="checkbox" name="Transilien" id="metro_checkbox" onchange="doalert(this, document.querySelector('.transilien'))">
+    <label for="Transilien">Transilien</label>
+    <input type="checkbox" name="fVilles" id="metro_checkbox" onchange="doalert(this, document.querySelector('.fVilles'))">
+    <label for="fVilles">Frontiere des Villes</label>
+  </div>
+
+<script type="text/javascript" src="js/directive.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46156385-1', 'cssscript.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
